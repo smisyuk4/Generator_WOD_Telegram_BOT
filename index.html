@@ -1,0 +1,120 @@
+//страница скопирована, чтобы проверить как работает хостинг
+
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <base target="_top">
+      <style>
+      * {
+      padding: 0;
+      margin: 0;
+      font-family: Arial, sans-serif;
+      }
+      
+      h1, h2 {
+      text-transform: uppercase;     
+      font-weight: bold;
+      text-align: center;	
+      }
+      
+      h1 {
+      margin-top: 50px;
+      }
+            
+      h2 {
+      padding-top: 10px;
+      margin-bottom: 20px;
+      }
+      
+      .container {	
+      margin: 0 auto;    
+      width: 800px;
+      }
+      
+      img {
+      margin-left: 275px;          
+      }
+      
+      .scan{
+      /*background: #F0E90EFF;*/ 
+      }
+      
+      .control{
+      background: #FF6040BF;
+      height: 180px;
+      }
+      
+      button {
+      display: block;
+      border-radius: 3px;
+      width: 200px;
+      padding: 20px 0;	
+      text-decoration: none;
+      text-transform: uppercase;
+      font-weight: bold;
+      font-size: 18px;
+      text-align: center;
+      }
+      
+      #btn1 {      
+      margin-left: 300px;
+      margin-bottom: 50px;
+      }
+      
+      
+      #btn2, #btn3 {
+      font-size: 24px;
+      color: #5360ABFF;
+      }
+      
+      #btn2 {
+      float: left;
+      margin-left: 50px;
+      }
+      
+      #btn3 {
+      float: right;
+      margin-right: 50px;
+      }
+      
+     
+      
+      </style>    
+  </head>
+  <body>
+    <div class="container">
+     <div class="scan">
+        <h1> КОНТРОЛЬ ПОСЕЩЕНИЙ! </h1>          
+        <img src="https://cdn1.radikalno.ru/uploads/2020/3/7/2da703be002dea74be410b04a3df4b3d-full.png">          
+        <button id="btn1">Сканировать абонемент</button>       
+    </div>
+    <div class="control"> 
+        <h2> СПИСАТЬ ТРЕНИРОВКИ </h2>
+        <button id="btn2">+1 шт</button>
+        <button id="btn3">-1 шт</button>
+    </div>
+   </div>    
+   
+   
+   <script>
+      google.script.run.doSomething();
+   </script>
+   
+   
+   <script>         
+    var el = document.getElementById("btn1");
+    el.addEventListener("click", doStuff, false);       
+    
+    function doStuff(){
+       /* google.script.run.userClicked();    */
+       Logger.log("ЗАРАБОТАЛО!");
+    }    
+    </script>    
+   
+   
+  </body>
+</html>
+
+
